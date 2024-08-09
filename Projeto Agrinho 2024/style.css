@@ -1,0 +1,43 @@
+:root{
+  --cinza: #aaa;
+  --vermelha: #e93d50;
+  --vermelha-escura:#af303f;
+  --luz:rgb(229,255,0);
+}
+body{
+ align-items: center;
+  background-color: linear-gradient(45deg,#a7cfdf 0%, #23538a 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserrat",sans-serif;
+  min-height: 100vh;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+h1{
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+ /* Estilos responsivos */
+ @media (max-width: 600px) {
+     nav ul li {
+         display: block;
+         margin: 0.5em 0;
+     }
+
+     .service {
+         text-align: center;
+     }
+ }
+
+ @media (min-width: 601px) and (max-width: 992px) {
+     .service {
+         text-align: left;
+     }
+ }
